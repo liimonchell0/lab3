@@ -3,8 +3,8 @@
     <string name="massage_button">Закрыть</string>
     <string name="insert_text">Введите текст</string>
     <string name="set_button">выбрать</string>
-    <string name="set_text">новое представление</string>
-    <string name="button_view_text">Представление с текстом</string>
+    <string name="set_text" translatable="false">новое представление</string>
+    <string name="button_view_text" translatable="false">Представление с текстом</string>
     <string name="button_buttons">Кнопки</string>
     <string name="button_textField">Ввод текста</string>
     <string name="button_progress">Прогрессбар</string>
