@@ -24,6 +24,7 @@ fun FundamentalsApp() {
                 is Screen.Scaffold -> ScaffoldScreen()
                 is Screen.Box -> BoxScreen()
                 is Screen.Surface -> SurfaceScreen()
+                is Screen.Scrolling -> ScrollingScreen()
             }
         }
     }
