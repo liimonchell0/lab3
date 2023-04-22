@@ -21,4 +21,7 @@
     <string name="kotlin" />
     <string name="swift" />
     <string name="ios" />
+    <string name="advance">Усовершенствованная архитекртура Android</string>
+    <string name="kot">Изучение Kotlin</string>
+    <string name="corutine">Корутины в Kotlin</string>
 </resources>

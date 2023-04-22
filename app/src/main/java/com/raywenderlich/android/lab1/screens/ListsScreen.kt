@@ -36,7 +36,7 @@ private val items = listOf(
         R.string.ios,
         listOf(
             R.drawable.core_data,
-            R.drawable.ios_apperentice,
+            R.drawable.ios_apprentice,
         )
     )
 )
