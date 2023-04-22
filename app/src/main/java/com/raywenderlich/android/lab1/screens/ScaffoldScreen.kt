@@ -18,6 +18,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 @Composable
+@Preview
 fun ScaffoldScreen(){
     MyScaffold()
 
@@ -28,7 +29,6 @@ fun ScaffoldScreen(){
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-@Preview
 fun MyScaffold(){
 val scaffoldState: ScaffoldState = rememberScaffoldState()
     val scope: CoroutineScope = rememberCoroutineScope()
@@ -47,9 +47,9 @@ val scaffoldState: ScaffoldState = rememberScaffoldState()
 }
 
 @Composable
-@Preview
 fun MyTopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope){
  val drawerState = scaffoldState.drawerState
+
     TopAppBar(
         navigationIcon = {
             IconButton(
@@ -73,8 +73,12 @@ fun MyTopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope){
 }
 
 @Composable
-
 fun MyBottomAppBar(){
+    BottomAppBar(
+        content = {},
+        backgroundColor = colorResource(id = R.color.colorPrimary))
+
+
 
 }
 
