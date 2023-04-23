@@ -17,12 +17,14 @@
     <string name="third">Третий</string> /string>
     <string name="menu">Меню</string>
     <string name="MyComposeApp">MyComposeApp</string>
-    <string name="android" />
-    <string name="kotlin" />
-    <string name="swift" />
-    <string name="ios" />
+    <string name="android">Android</string >
+    <string name="kotlin">Kotlin</string>
+    <string name="swift">Swift</string>
+    <string name="ios">IOS</string>
     <string name="advance">Усовершенствованная архитекртура Android</string>
     <string name="kot">Изучение Kotlin</string>
     <string name="corutine">Корутины в Kotlin</string>
     <string name="Kroll">Прокрутка</string>
+    <string name="cover">Обложки книг</string>
+    <string name="List">List</string>
 </resources>

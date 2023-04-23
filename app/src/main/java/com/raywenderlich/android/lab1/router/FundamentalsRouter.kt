@@ -21,6 +21,7 @@ sealed class Screen {
     object Surface : Screen()
     object Scaffold : Screen()
     object Scrolling : Screen()
+    object List: Screen()
 }
 
 object FundamentalsRouter {
