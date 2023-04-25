@@ -5,7 +5,10 @@ import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
@@ -36,9 +39,19 @@ private val items = listOf(
 
 )
 
+@ExperimentalMaterialApi
 @Composable
 fun GridScreen(){
-    GridView(columnCount = 3)
+    LazyVerticalGrid(
+        modifier = Modifier.fillMaxSize(),
+        columns = GridCells.Fixed(3),
+        content = {
+            items(count = items.size){
+                item ->
+                GridIcon(IconResource(items[item], true))
+            }
+        }
+    )
     
     BackButtonHandler {
     FundamentalsRouter.navigateTo(Screen.Navigation)
@@ -102,5 +115,19 @@ fun RowScope.GridIcon(iconResource: IconResource){
             .weight(1f)
     )
 
+}
+@Composable
+fun GridIcon(iconResource: IconResource){
+    val color = if (iconResource.isVisible)
+        colorResource(R.color.colorPrimary)
+    else Color.Transparent
+
+    Icon(
+        imageVector = iconResource.imageVector,
+        tint = color,
+        contentDescription = stringResource(R.string.grid_icon),
+        modifier = Modifier
+            .size(80.dp, 80.dp)
+    )
 }
 data class IconResource(val imageVector: ImageVector, val isVisible: Boolean)
