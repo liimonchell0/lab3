@@ -27,4 +27,6 @@
     <string name="Kroll">Прокрутка</string>
     <string name="cover">Обложки книг</string>
     <string name="List">List</string>
+    <string name="grid_icon">Grid</string>
+    <string name="Grid">Grid</string>
 </resources>

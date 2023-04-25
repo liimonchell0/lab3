@@ -1,11 +1,14 @@
 package com.raywenderlich.android.lab1.screens
 
 import android.annotation.SuppressLint
+
+
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
+
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
@@ -16,9 +19,7 @@ import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-
 @Composable
-@Preview
 fun ScaffoldScreen(){
     MyScaffold()
 
@@ -47,8 +48,9 @@ val scaffoldState: ScaffoldState = rememberScaffoldState()
 }
 
 @Composable
-fun MyTopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope){
- val drawerState = scaffoldState.drawerState
+
+fun MyTopAppBar(scaffoldState: ScaffoldState, scope:CoroutineScope){
+ val  drawerState = scaffoldState.drawerState
 
     TopAppBar(
         navigationIcon = {
@@ -65,10 +67,9 @@ fun MyTopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope){
                 }
             )
         },
-        title = { Text(text = stringResource(id = R.string.MyComposeApp), color = Color.White )},
-        backgroundColor =  colorResource(id = R.color.colorPrimary)
+        title = { Text(text = stringResource(id = R.string.app_name), color = Color.White) },
+        backgroundColor = colorResource(id = R.color.colorPrimary)
     )
-        
 
 }
 

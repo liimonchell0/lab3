@@ -22,7 +22,8 @@ import com.raywenderlich.android.lab1.router.Screen
 @Composable
 fun TextScreen() {
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier,
+
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
